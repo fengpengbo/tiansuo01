@@ -1,0 +1,174 @@
+/*content*/
+.login{
+	float: left;
+	width: 800px;
+	height: 748px;
+	background: url(../img/newuse.jpg) no-repeat right top;
+}
+.newuse{
+	float: left;
+	width: 800px;
+	height: 1115px;
+	background: url(../img/newuse.jpg) no-repeat left top;
+}
+.login h2{
+	font-size:30px; 
+	margin-left:142px; 
+	margin-top:79px;
+	line-height: 92px;
+	color: #000;
+	font-weight: 100;
+}
+.login .p1{
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 142px;
+	color: #000;
+}
+.login .p2{
+	font-size: 12px;
+	margin-top: 23px;
+	margin-left: 142px;
+	margin-bottom: 13px;
+	color: #000;
+}
+.login .login_A{
+	font-size: 14px;
+	display: block;
+	width: 185px;
+	height: 40px;
+	color: #fff;
+	background: #e4141d;
+	margin-left: 142px;
+	text-align: center;
+	line-height: 40px;
+}
+.login .login_l{
+	width: 178px;
+	height: 31px;
+	margin-left: 142px;
+	display: flex;
+	justify-content: space-between;
+}
+.newuse{
+	float: left;
+	width: 800px;
+	height: 1115px;
+	background: url(../img/newuse.jpg) no-repeat left top;
+}
+.newuse h2{
+	font-size:30px; 
+	margin-left:34px; 
+	margin-top:79px;
+	line-height: 92px;
+	color: #000;
+	font-weight: 100;
+}
+.newuse .p1{
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 34px;
+	color: #000;
+}
+.newuse .p2{
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 34px;
+	color: #000;
+}
+.newuse .p2 span{
+	color: red;
+}
+.newuse .p3{
+	float: left;
+	color: #000;
+	font-size: 12px;
+	width: 301px;
+	height: 39px;
+	margin-left: 34px;
+	text-align: center;
+	line-height: 39px;
+	border: 1px solid #9a9a9a;
+	cursor: pointer;
+}
+.newuse .p4{
+	margin-left: 0px;
+}
+.newuse_name{
+	float: left;
+	width: 194px;
+	height: 413px;
+	text-align: right;
+	margin-top: 24px;
+}
+.newuse_name p{
+	font-size: 12px;
+	color: #000;
+	line-height: 56px;
+	margin-right: 10px;
+}
+.newuse form{
+	float: left;
+	margin-top: 16px;
+	width: 445px;
+}
+.newuse form input{
+	display: block;
+	width: 440px;
+	height: 32px;
+	margin-top: 22px;
+}
+.newuse form select{
+	width: 145px;
+	height: 32px;
+	margin-top: 22px;
+}
+.newuse form .newtxt{
+	float: left;
+	display: inline-block;
+	width: 286px;
+}
+.newuse form .txtA{
+	display: inline-block;
+	width: 154px;
+	height: 36px;
+	color: #fff;
+	background: #666666;
+	font-size: 12px;
+	margin-top: 22px;
+	text-align: center;
+	line-height: 36px;
+}
+.newuse .p5{
+	font-size: 10px;
+	color: #999999;
+	margin-top: 28px;
+}
+.newuse .newcheck{
+	float: left;
+	width: 19px;
+	height: 19px;
+	margin-right: 5px;
+}
+.newuse form .span{
+	font-size: 12px;
+	color: #000;
+	margin-top: 22px;
+    display: inline-block;
+}
+.newuse form .txtB{
+	font-size: 12px;
+	color: red;
+	text-decoration:underline; 
+}
+.newuse .subm{
+	margin-top: 36px;
+	width:400px;
+	height: 40px;
+	background: #e4141d;
+	color: #fff;
+	font-size: 14px;
+	/*outline: none;*/
+	border: none;
+	cursor: pointer;
+}

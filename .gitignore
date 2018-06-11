@@ -1,0 +1,8 @@
+.git/
+
+node_modules/
+
+notup.txt
+README.md
+.sass-cache/
+package.json
