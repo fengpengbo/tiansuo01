@@ -23,11 +23,11 @@ $(function(){
 		window.onscroll = function () {
 			var top = document.documentElement.scrollTop || document.body.scrollTop;
 			if(top >=100){
-				nav.style.cssText="opacity:1;";
-				navhide.style.cssText="opacity:0;";
+				nav.style.cssText="display: block;";
+				navhide.style.cssText="display: none;";
 			} else {
-				nav.style.cssText="opacity:0;";
-				navhide.style.cssText="opacity:1;";
+				nav.style.cssText="display: none;";
+				navhide.style.cssText="display: block;";
 			}
 		};
 

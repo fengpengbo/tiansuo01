@@ -91,6 +91,7 @@ ul,ol{
 	height: 71px;
 	text-align: center;
 	line-height: 71px;
+	border-bottom:2px solid #e6e6e6;
 }
 .nav a{
 	color: #000;
@@ -104,11 +105,12 @@ ul,ol{
 	height: 71px;
 	text-align: center;
 	line-height: 71px;
-	opacity: 0;
+	display: none;
 	position:fixed;
 	background:#fff;
 	left:0px;
 	top:0px;
+	border-bottom:2px solid #e6e6e6;
 }
 .navbig a{
 	color: #000;
