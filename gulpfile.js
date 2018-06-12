@@ -24,14 +24,20 @@ gulp.task("imgs",function(){
 // 复制js
 gulp.task("uglifyjs",function(){
 	gulp.src("js/*.js")
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\js"));	
 });
+//复制css
 // gulp.task("uglifycss",function(){
 // 	gulp.src("css/*.css")
 // 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\css"));	
 // });
-
+// 复制php
+gulp.task("uglifyphp",function(){
+	gulp.src("*.php")
+	// .pipe(uglify())
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo"));	
+});
 
 //sass编译
 gulp.task("scssfile",function(){

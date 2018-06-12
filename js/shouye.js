@@ -1,5 +1,23 @@
+$(function(){
+//广告栏
+	var num = 3;
+	var oDiv = document.getElementById("ad");
+	var t = setInterval(function(){
+		num--;
+		if(num == 0) {
+			clearInterval(t);
+			oDiv.style.display = "none";
+		}
+	},1000);
+	document.getElementById("ggao").onclick=function(){
+		oDiv.style.display = "block";
+		document.getElementById("ggao").style.display = "none";
+	}
+	document.getElementById("del").onclick=function(){
+		oDiv.style.display = "none";
+		document.getElementById("ggao").style.display = "block";
+	}
 //轮播图
-function show(){
 	let index = 0;
 	let timer = null;
 	function move(){
@@ -33,43 +51,15 @@ function show(){
 			
 		})
 	})
-}
-
-
-//导航栏
-function daohang(){
-	$('.box').on('mouseenter', function() {
-		$(".nav_con").removeClass('hide');
-	}).on('mouseleave', function() {
-		$(".nav_con").addClass('hide');
-		$(".sub").addClass('hide');
-	}).on('mouseenter', '.nav a', function(e) {
-		var li_data = $(this).attr('data-id');
-		$(".sub").addClass('hide');
-		$('.sub[data-id="' + li_data + '"]').removeClass('hide');
+//cookie
+	if(getCookie("userName")!=""){
+		$(".use").children("a").eq(0).html("欢迎您"+getCookie("userName"));
+	}
+	$(".use a").eq(0).click(function(){
+		removeCookie("userName");
 	})
-}
-// 回到顶部
-// function huiding(){
-//     var speed = 800;//滚动速度
-// 	// var h=document.body.clientHeight;
-//     //回到顶部
-//     $(".toTop").click(function () {
-// 	 	$('html,body').animate({
-// 			$(window).scrollTop:"0px";
-// 		},
-// 		speed);			
-//     });
-// //     // 回到底部
-// //     var windowHeight = parseInt($("body").css("height"));//整个页面的高度
-// //     $("#toBottom").click(function () {
-// // 		//alert(h);
-// //         $('html,body').animate({
-// // 			scrollTop: h+'px'
-// // 		},
-// // 		speed);
-// //     });
-// }
+
+})
 
 
 

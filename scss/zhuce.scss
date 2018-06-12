@@ -45,6 +45,7 @@
 	justify-content: space-between;
 }
 .newuse{
+	position:relative;
 	float: left;
 	width: 800px;
 	height: 1115px;
@@ -75,7 +76,7 @@
 }
 .newuse .p3{
 	float: left;
-	color: #000;
+	color: red;
 	font-size: 12px;
 	width: 301px;
 	height: 39px;
@@ -83,10 +84,26 @@
 	text-align: center;
 	line-height: 39px;
 	border: 1px solid #9a9a9a;
+	border-bottom:none;
 	cursor: pointer;
 }
 .newuse .p4{
+	color: #000;
+	border-left:none;
+	border-bottom: 1px solid #9a9a9a;
 	margin-left: 0px;
+}
+#phoneon{
+	position:absolute;
+	left:0;
+	top:300px;
+	display:block;
+}
+#emailon{
+	position:absolute;
+	left:0;
+	top:300px;
+	display:none;
 }
 .newuse_name{
 	float: left;
