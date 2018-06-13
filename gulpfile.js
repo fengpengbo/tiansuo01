@@ -28,10 +28,14 @@ gulp.task("uglifyjs",function(){
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\js"));	
 });
 //复制css
-// gulp.task("uglifycss",function(){
-// 	gulp.src("css/*.css")
-// 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\css"));	
-// });
+gulp.task("uglifycss",function(){
+	gulp.src("css/jd.css")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\css"));	
+});
+gulp.task("css",function(){
+	gulp.src("css/iconfont.css")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\css"));	
+});
 // 复制php
 gulp.task("uglifyphp",function(){
 	gulp.src("*.php")
@@ -58,8 +62,10 @@ gulp.task("scssfile",function(){
 //监听
 gulp.task("watchall",function(){
 	gulp.watch("*.html",["copyhtml"]);
+	gulp.watch("*.php",["uglifyphp"]);
 	gulp.watch("img/*.{jpg,png}",["imgs"]);
 	gulp.watch("js/*.js",["uglifyjs"]);
-	// gulp.watch("css/*.css",["uglifycss"]);
+	gulp.watch("css/jd.css",["uglifycss"]);
+	gulp.watch("css/iconfont.css",["css"]);
 	 gulp.watch("scss/*.scss",["scssfile"]);
 });

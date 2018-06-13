@@ -18,9 +18,9 @@ $rows = mysql_num_rows($result);
 mysql_close($conn);
 
 if($rows==0){
-		echo "1"; //没有查找到
+		echo "0"; //没有查找到
 	}else{
-		echo "0";
+		echo "1";
 	}
 
 

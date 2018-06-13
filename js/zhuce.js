@@ -19,11 +19,11 @@ $(function(){
 		}else{
 			$.post("cheakup.php",{username:$("#userName").val()},function(data){
 				if(data==1){
-					$("#spanId").html("用户名可以使用");
+					// $("#spanId").html("用户名可以使用");
 					$("#spanId").css({height:"20px",paddingLeft:"30px",display:"inline-block",color:"#606060",background:"url(img/input.png) no-repeat 7px -37px"});
 				}else{
-					$("#spanId").html("用户名被占用，请重新输入。");
-					$("#spanId").css({height:"20px",paddingLeft:"30px",display:"inline-block",color:"#606060",background:"url(img/input.png) no-repeat 7px 0px"});
+					// $("#spanId").html("用户名被占用，请重新输入。");
+					$("#spanId").css({height:"20px",display:"inline-block",color:"#606060",background:"url(img/input.png) no-repeat 7px 0px"});
 				};
 			});
 		}
@@ -53,7 +53,7 @@ $(function(){
 			$.post("register.php",{username:$("#userName").val(),password:$("#userPass").val()},function(data){
 				if(data==1){
 					alert("恭喜您，注册成功");
-					location.href="login.html";
+					location.href="../login.html";
 				}else{
 					alert("0.0……");
 				}
