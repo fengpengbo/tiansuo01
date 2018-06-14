@@ -82,16 +82,19 @@ ul,ol{
 }
 
 /*nav*/
-.box{
+.boxbig{
+	width: 100%;
+	height: 71px;
 	position: relative;
 	z-index: 100;
+	border-bottom:2px solid #e6e6e6;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 .nav{
 	width: 100%;
-	height: 71px;
 	text-align: center;
-	line-height: 71px;
-	border-bottom:2px solid #e6e6e6;
 }
 .nav a{
 	color: #000;
@@ -102,7 +105,7 @@ ul,ol{
 }
 .navbig{
 	width: 100%;
-	height: 71px;
+	// height: 71px;
 	text-align: center;
 	line-height: 71px;
 	display: none;

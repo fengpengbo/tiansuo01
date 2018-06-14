@@ -36,6 +36,10 @@ gulp.task("css",function(){
 	gulp.src("css/iconfont.css")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\css"));	
 });
+gulp.task("fonts",function(){
+	gulp.src("font/**/*")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\tiansuo\\font"));	
+});
 // 复制php
 gulp.task("uglifyphp",function(){
 	gulp.src("*.php")
@@ -66,6 +70,7 @@ gulp.task("watchall",function(){
 	gulp.watch("img/*.{jpg,png}",["imgs"]);
 	gulp.watch("js/*.js",["uglifyjs"]);
 	gulp.watch("css/jd.css",["uglifycss"]);
+	gulp.watch("font/**/*",["fonts"]);
 	gulp.watch("css/iconfont.css",["css"]);
 	 gulp.watch("scss/*.scss",["scssfile"]);
 });

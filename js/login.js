@@ -1,7 +1,7 @@
 $(function(){
 	$(".login_B").click(function(){
-		if($("#userName").val().length<2||$("#userName").val().length>10){
-			alert("用户名应在2到10个字符间！");
+		if($("#userName").val().length<5||$("#userName").val().length>5){
+			alert("用户名应在5-15个字母！");
 		}else if($("#userPass").val().length<6){
 			alert("密码必须在6位以上！");
 		}else{
@@ -9,11 +9,11 @@ $(function(){
 			xhr.open("post","login.php",true);
 			xhr.onreadystatechange=function(){
 				if (xhr.readyState==4 && xhr.status==200) {
-					if(xhr.responseText=="1"){
+					if(xhr.responseText=="0"){
 						saveCookie("userName",$("#userName").val(),7);
 						location.href="tiansuo.html";
 					}else{
-					alert("账号或密码错误！");
+						alert("账号或密码错误！");
 					}
 				}
 			}
